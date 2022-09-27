@@ -10,6 +10,7 @@ import { NewsletterComponent } from './Components/newsletter/newsletter.componen
 import { PressComponent } from './Components/press/press.component';
 import { SocialComponent } from './Components/social/social.component';
 import { TStoreComponent } from './Components/t-store/t-store.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TStoreComponent } from './Components/t-store/t-store.component';
     TStoreComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
