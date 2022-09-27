@@ -1,0 +1,24 @@
+<nav class="d-flex">
+  <a class="navbar-brand" href="#">WATCH/LAB</a>
+  <ul class="d-flex justify-content-between ul">
+
+    <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+    <li class="menu" [class.is-open]="isMenuOpen">
+      <a class="menu-item">About us</a>
+      <a class="menu-item">Brand</a>
+      <a class="menu-item">Projects</a>
+      <a class="menu-item">Magazine</a>
+      <a class="menu-item">Press</a>
+      <a class="menu-item">Contact</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" aria-label="Search">
+        <button type="submit">
+          <img src="../../../assets/lente.png" alt="lente" width="15" height="15">
+        </button>
+      </form>
+    </li>
+  </ul>
+</nav>
+

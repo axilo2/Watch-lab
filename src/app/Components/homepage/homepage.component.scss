@@ -1,0 +1,118 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img{
+  background: url(../../../assets/sala_riunioni.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  .item-1{
+    background: url(../../../assets/orologio_1.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0%;
+    right: 3%;
+    width: 250px;
+    height: 180px;
+    padding: 0 10px;
+    color: white;
+    .first-word{
+      padding-top: 15px;
+      font-family: 'Miller';
+    }
+    .second-word{
+      position: absolute;
+      bottom: 0%;
+      right: 0;
+      padding: 10px;
+      font-size: small;
+      font-family: 'Montserrat';
+      letter-spacing: 3px;
+      span{
+        padding-left: 18px;
+        font-size: small;
+      }
+    }
+  }
+  .cont-titolo{
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .titolo{
+    color: rgb(255, 255, 255);
+    width: 400px;
+    text-align: center;
+    animation: nome 1s linear 1 alternate;
+    h2{
+      font-size: 44px;
+      font-family: 'Merriweather-Regular';
+    }
+    p{
+      font-size: x-small;
+      margin: 30px;
+      font-family: 'Montserrat';
+      letter-spacing: 3px;
+    }
+    .p2{
+      letter-spacing: 0ch;
+    }
+    .btn {
+      height: 3.438rem;
+      width: 9.688rem;
+      background: inherit;
+      border: solid 2px;
+      border-radius: 1px;
+      font-size: 18px;
+      transition: 0.3s;
+      font-display: center;
+      white-space: nowrap;
+      padding-top: 10px;
+    }
+    .alternative_btn {
+      border: solid 2px white;
+      color: white;
+      font-family: 'Miller';
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      font-size: inherit;
+    }
+    @media screen and (max-width: 575.98px) {
+      .btn {
+        width: 90%;
+      }
+    }
+  }
+
+}
+
+@keyframes nome {
+  0%{
+    transform: scale(.6);
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+}
+/*MEDIA */
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .item-1{
+    visibility: hidden;
+  }
+
+}
+

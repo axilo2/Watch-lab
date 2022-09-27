@@ -53,9 +53,12 @@
               "src/assets"
             ],
             "styles": [
+              "../app-nss/node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../app-nss/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

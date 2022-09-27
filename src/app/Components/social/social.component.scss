@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 60px;
+  .img{
+    background: url(../../../assets/orologio_d_affari.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    .bg{
+      background-color: rgb(0, 0, 0, 0.4);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        font-size: x-small;
+        padding-bottom: 30px;
+        font-family: 'Montserrat';
+      }
+      h1{
+        width: 250px;
+        text-align: center;
+        font-family: 'Miller';
+      }
+    }
+  }
+  .cont-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    .insta-1{
+      background: url(../../../assets/bus.png) no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+    }
+    .insta-2{
+      background: url(../../../assets/orologio_3.png) no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+    }
+    .insta-3{
+      background: url(../../../assets/orologio_2.png) no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+    }
+    .insta-4{
+      background: url(../../../assets/orologio_1.png) no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+/*MEDIA
+@media screen and (max-width: 768px) and (min-width: 400px) {
+
+
+
+}*/
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .cont{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 0%;
+    position: relative;
+    top: 45vh;
+    .img{
+      width: 100vw;
+      h1{
+        width: 200px;
+        text-align: center;
+      }
+    }
+    .cont-imgs{
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      div{
+        display: none;
+      }
+    }
+  }
+}
+

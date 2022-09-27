@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .text{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Miller';
+  }
+  p{
+    font-size: small;
+    padding: 40px;
+
+  }
+  .p1{
+    font-size: x-small;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+  }
+  .p2{
+    color: #979696;
+  }
+  .img{
+    background: url(../../../assets/casa_inverno.jpeg) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+  .titolo2{
+    width: 300px;
+  }
+  .img2{
+    background: url(../../../assets/casa_estate.webp) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.btn {
+  height: 3.438rem;
+  width: 10.7rem;
+  background: inherit;
+  border: solid 2px;
+  border-radius: 1px;
+  font-size: 18px;
+  transition: 0.3s;
+  font-display: center;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+.alternative_btn {
+  border: solid 2px #b5b53a;
+  color: #b5b53a;
+  padding-bottom: 10px;
+}
+.btn:hover {
+  color: #b5b53a;
+  transform: scale(1.1);
+  transition: 0.3s;
+  font-size: inherit;
+}
+@media screen and (max-width: 575.98px) {
+  .btn {
+    width: 90%;
+  }
+}
+/*MEDIA */
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .img2:nth-child(1){
+     order: 2;
+    }
+}
+

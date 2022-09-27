@@ -1,0 +1,116 @@
+$menuBreakpoint: 768px;
+$menuHeight: 50px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  margin: 0;
+  width: 100vw;
+  .navbar-brand{
+    height: $menuHeight;
+    background-color: #d1c5b7;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-size: 25px;
+    padding: 5px;
+    margin-left: 0;
+  }
+  .ul{
+    width: 100%;
+    padding-left: 50px;
+    .menu-item{
+      padding-top: 18px;
+    }
+    .menu-item:hover{
+      color: #cccccc;
+      cursor: pointer;
+    }
+  }
+  form{
+    margin: 0%;
+    position: absolute;
+    right: 0%;
+    @media (max-width: $menuBreakpoint) {
+      position: absolute;
+      left: 0%;
+      background-color: #fff;
+      padding: 15px;
+    }
+    input{
+      width: 100px;
+      border-style: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    button{
+      border: none;
+      background-color: #fff;
+    }
+    button img{
+      transform: scaleX(-1);
+    }
+    button img:hover{
+
+      transform: scale(1.4);
+      transition: 1s;
+    }
+  }
+}
+
+.burger{
+  padding: 0 10px;
+  border-left: 1px solid #eee;
+  display: none;
+  cursor: pointer;
+  i{
+    color: #999;
+    line-height: $menuHeight;
+  }
+  @media (max-width: $menuBreakpoint) {
+    display: block;
+    position: absolute;
+    right: 0%;
+  }
+}
+
+/*MEDIA */
+.menu{
+  display: flex;
+  align-items: center;
+  @media (max-width: $menuBreakpoint) {
+    display: none;
+
+    &.is-open{
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: #{$menuHeight };
+      width: 100vw;
+      background: #fff;
+
+      .menu-item{
+        border-bottom: 1px solid #cccccc;
+      }
+    }
+  }
+
+  .menu-item{
+    padding: 0 10px;
+    height: $menuHeight;
+    display: block;
+    color: #000;
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+}
